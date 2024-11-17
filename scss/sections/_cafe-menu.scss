@@ -1,0 +1,82 @@
+@use "../partials/mixins";
+@use "../partials/colors";
+
+
+.menu-container {
+  @include mixins.space-evenly-content;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  h3 {
+    @include mixins.center-content;
+    font-family: "Open Sans", serif;
+    font-weight: bold;
+    color: colors.$cafe-grey;
+  }
+}
+
+.toggle-bar {
+  background-color: colors.$millenial-pink;
+  color: colors.$cafe-grey;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+
+  summary {
+    font-family: "Open Sans", serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 10px;
+  }
+
+}
+
+.card-container {
+  @include mixins.space-evenly-content;
+  background-color: white;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.menu-card {
+  height: 400px;
+  width: 300px;
+  background-color: colors.$millenial-pink;
+    &-drinks {
+      padding-bottom: 20px;
+    }
+  .menu-img {
+    height: 70%;
+    width: 90%;
+    margin: 20px auto;
+    img {
+      height:100%;
+      width: 100%;
+    }
+  }
+
+    .menu {
+      &-item-info {
+        @include mixins.center-content;
+        flex-wrap: wrap;
+        margin: 10px;
+        gap: 10px;
+      p {
+        font-size: small;
+      }
+      .icon {
+        @include mixins.center-content;
+        height: 24px;
+        width: 24px;
+        font-size: 20px;
+        color: colors.$sage;
+        background-color: colors.$millenial-pink;
+      }
+    }
+  }
+}

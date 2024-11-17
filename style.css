@@ -1,0 +1,364 @@
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .icon {
+  height: 48px;
+  width: 48px;
+  font-size: 40px;
+  transform: scaleX(-1);
+  background-color: white;
+  color: #FAA196;
+  margin-left: 72px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-right: 70px;
+}
+.links a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #404040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  height: 600px;
+  width: 100%;
+  gap: 0;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 600px;
+  width: 50%;
+  background-color: #689572;
+  color: white;
+}
+.title-box h1, .title-box h3, .title-box a {
+  margin-left: 120px;
+}
+.title-box a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  color: white;
+}
+.title-box .button {
+  background-color: none;
+  border: 2px white solid;
+}
+
+.img-box {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container while maintaining its aspect ratio */
+  display: block;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.menu-container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  color: #404040;
+}
+
+.toggle-bar {
+  background-color: #ebc9c4;
+  color: #404040;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+.toggle-bar summary {
+  font-family: "Open Sans", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.menu-card {
+  height: 400px;
+  width: 300px;
+  background-color: #ebc9c4;
+}
+.menu-card-drinks {
+  padding-bottom: 20px;
+}
+.menu-card .menu-img {
+  height: 70%;
+  width: 90%;
+  margin: 20px auto;
+}
+.menu-card .menu-img img {
+  height: 100%;
+  width: 100%;
+}
+.menu-card .menu-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  gap: 10px;
+}
+.menu-card .menu-item-info p {
+  font-size: small;
+}
+.menu-card .menu-item-info .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  font-size: 20px;
+  color: #82A289;
+  background-color: #ebc9c4;
+}
+
+#reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FAA196;
+}
+
+.title-container {
+  background-color: #FAA196;
+  height: 120px;
+}
+.title-container h2 {
+  color: white;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  max-width: 62%;
+  background-color: #FAA196;
+  padding-bottom: 50px;
+}
+.reviews-container .card-review {
+  border: 3px solid white;
+  height: 200px;
+  width: 450px;
+  padding: 10px;
+}
+.reviews-container .card-review blockquote {
+  color: #404040;
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-style: italic;
+  padding: 0 40px 0 40px;
+  text-align: center;
+}
+.reviews-container .card-review i {
+  color: #404040;
+  transform: scale(1.5);
+  margin: 10px;
+}
+.reviews-container .card-review .fa-quote-right {
+  margin-left: 90%;
+}
+
+.review-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #689572;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .icon {
+  height: 48px;
+  width: 48px;
+  font-size: 40px;
+  transform: scaleX(-1);
+  background-color: #689572;
+  color: white;
+  margin-left: 72px;
+}
+footer .ig {
+  margin-right: 72px;
+}
+footer p {
+  color: white;
+  margin-right: auto;
+  padding-left: 20px;
+}
+
+#contact-form {
+  background-color: #FAA196;
+  height: 700px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#title h2, #title h3 {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  min-width: 300px;
+  font-size: 1em;
+  padding: 5px;
+}
+
+textarea {
+  min-height: 100px;
+  min-width: 95%;
+  padding: 10px;
+}
+
+select {
+  padding: 5px;
+  font-size: 1em;
+  min-width: 100%;
+}
+
+.form {
+  height: 400px;
+  width: min-content;
+  margin: auto;
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1em;
+}
+.form button {
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+  border: 2px solid #404040;
+}
+.form button p {
+  font-weight: 400;
+}
+.form button:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+  border: 2px solid #404040;
+}
+.form button:hover p {
+  font-weight: 600;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 44px;
+  color: #FAA196;
+  margin: 20px;
+}
+
+h3 {
+  font-family: "Open Sans", serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-weight: 100;
+  color: #404040;
+}
+
+.bold-open {
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rammetto+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rammetto+One&display=swap" rel="stylesheet">
+  <title>Pink Cafe Assessment Project -</title>
+</head>
+<body>
+  <nav>
+    <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+    <div class="links bold-open">
+      <a href="#">ABOUT</a>
+      <a href="./index.html">HOME</a>
+    </div>
+  </nav>
+  <section id="contact-form">
+  <div id="title">
+    <h2>Contact Form</h2>
+    <h3>Submit your enquiry below and we'll be in touch :)</h3>
+  </div>
+    <div class="form">
+      <form action="./index.html">
+        <div class="label">
+          <label for="name">Your Name*</label>
+        </div>
+        <div>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="label">
+          <label for="email">Email*</label>
+        </div>
+        <div>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="label">
+          <label for="enquiry">Subject*</label>
+        </div>
+        <div>
+          <select name="enquiry" id="enquiry" placeholder="What is your enquiry regarding?" required>
+            <option disabled>What is your enquiry regarding?</option>
+            <option value="bookings">Bookings</option>
+            <option value="online-order">Online Orders</option>
+            <option value="Complaints">Complaints</option>
+          </select>
+        </div>
+        <div class="label">
+          <label for="comment">Message*</label>
+        </div>
+        <div>
+          <textarea name="comment" id="comment" placeholder="Tell us more about your enquiry" required></textarea>
+        </div>
+        <div class="button">
+          <button type="submit"><p>Submit!</p></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

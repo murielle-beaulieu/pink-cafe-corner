@@ -1,0 +1,33 @@
+@use "../partials/mixins";
+@use "../partials/colors";
+
+nav {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  @include mixins.space-between-content;
+  .icon {
+    height: 48px;
+    width: 48px;
+    font-size: 40px;
+    transform: scaleX(-1);
+    background-color: white;
+    color: colors.$cafe-pink;
+    margin-left: 72px;
+  }
+}
+
+.links {
+  @include mixins.space-between-content;
+  gap: 50px;
+  margin-right: 70px;
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+    color: colors.$cafe-grey;
+  }
+}

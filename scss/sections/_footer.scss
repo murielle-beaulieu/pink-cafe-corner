@@ -1,0 +1,26 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: colors.$cafe-green;
+  @include mixins.space-between-content;
+  .icon {
+    height: 48px;
+    width: 48px;
+    font-size: 40px;
+    transform: scaleX(-1);
+    background-color: colors.$cafe-green;
+    color: white;
+    margin-left: 72px;
+  }
+  .ig {
+    margin-right: 72px;
+  }
+  p {
+    color: white;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+}

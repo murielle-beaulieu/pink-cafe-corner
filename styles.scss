@@ -1,0 +1,42 @@
+@use "./scss/partials/mixins";
+@use "./scss/sections/nav";
+@use "./scss/partials/colors";
+@use "./scss/sections/hero";
+@use "./scss/sections/cafe-menu";
+@use "./scss/sections/reviews";
+@use "./scss/sections/footer";
+@use "./scss/sections/form-page";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Rammetto One", sans-serif;
+  font-size: 44px;
+  color: colors.$cafe-pink;
+  margin: 20px;
+}
+
+h3 {
+  font-family: "Open Sans", serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: "Open Sans", serif;
+  font-weight: 100;
+  color: colors.$cafe-grey;
+}
+
+.bold-open {
+  font-family: "Open Sans", serif;
+  font-weight: bold;
+}

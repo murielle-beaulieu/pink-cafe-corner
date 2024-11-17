@@ -1,0 +1,52 @@
+@use "../partials/colors";
+@use "../partials/mixins";
+
+#reviews {
+  @include mixins.space-around-col-content;
+  background-color: colors.$cafe-pink;
+}
+
+.title-container {
+  background-color: colors.$cafe-pink;
+  height: 120px;
+  h2 {
+    color: white;
+  }
+}
+
+.reviews-container {
+  @include mixins.space-evenly-content;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 100%;
+  max-width: 62%;
+  background-color: colors.$cafe-pink;
+  padding-bottom:50px;
+  .card-review {
+    border: 3px solid white;
+    height: 200px;
+    width: 450px;
+    padding: 10px;
+    blockquote {
+      color: colors.$cafe-grey;
+      font-family: "Open Sans", serif;
+      font-weight: 600;
+      font-style: italic;
+      padding: 0 40px 0 40px;
+      text-align: center;
+    }
+    i{
+      color: colors.$cafe-grey;
+      transform: scale(1.5);
+      margin: 10px;
+    }
+    .fa-quote-right {
+      margin-left: 90%;
+    }
+  }
+}
+
+  .review-user {
+    @include mixins.space-between-content;
+    padding: 10px;
+  }
