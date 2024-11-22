@@ -84,7 +84,7 @@ nav .icon {
 
 .menu-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 70%;
@@ -104,9 +104,6 @@ nav .icon {
   background-color: #ebc9c4;
   color: #404040;
   width: 100%;
-  display: flex;
-  justify-self: center;
-  align-items: center;
   margin: 20px 0 20px 0;
 }
 .toggle-bar summary {

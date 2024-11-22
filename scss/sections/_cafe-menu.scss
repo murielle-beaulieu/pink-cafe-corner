@@ -3,7 +3,7 @@
 
 
 .menu-container {
-  @include mixins.space-evenly-content;
+  @include mixins.space-between-content;
   flex-wrap: wrap;
   width: 70%;
   margin: auto;
@@ -20,9 +20,6 @@
   background-color: colors.$millenial-pink;
   color: colors.$cafe-grey;
   width: 100%;
-  display: flex;
-  justify-self: center;
-  align-items: center;
   margin: 20px 0 20px 0;
 
   summary {
